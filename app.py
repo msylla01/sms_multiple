@@ -12,8 +12,8 @@ sys.getfilesystemencoding()
 load_dotenv('.env')
  
 # Load in configuration from environment variables:
-VONAGE_API_KEY = '37defc48'
-VONAGE_API_SECRET = 'GINnNZt2r3gawGS3'
+VONAGE_API_KEY = 'your_api_key'
+VONAGE_API_SECRET = 'you_api_secret'
 #NEXMO_NUMBER = 'abcdef12345678'
 
 
