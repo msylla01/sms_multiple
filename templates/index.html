@@ -1,1 +1,92 @@
 
+<!-- <h1>Send an SMS</h1>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<div class="container">
+    <h1>Send an SMS</h1>
+    <form action="/send_sms" method="POST">
+        <div class="form-group"><label for="destination">Phone Number</label>
+            <input id="to_number" class="form-control" name="to_number" type="tel" placeholder="Phone Number" /></div>
+        <div class="form-group"><label for="message">Message</label>
+            <textarea id="message" class="form-control" name="message" placeholder="Your message goes here"></textarea></div>
+        <button class="btn btn-default" type="submit">Send SMS</button>
+    </form>
+</div>-->
+
+<html>
+    <head>
+        <title>Contact Form Tutorial by Bootstrapious.com</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+        <link href='custom.css' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-xl-8 offset-xl-2 py-5">
+
+                    <h1>CAMPAGNE SMS</h1>
+
+                    
+
+                    <!-- We're going to place the form here in the next step -->
+                    <form id="contact-form" action="/send_sms" method="POST" role="form">
+
+    <div class="messages"></div>
+
+    <div class="controls">
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="form_name">Compagny Name *</label>
+                    <input id="name_compagny" type="text" name="name_compagny" class="form-control" placeholder="Please enter your company name *" required="required" data-error="Firstname is required.">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+           
+        </div>
+        
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label for="form_message">Liste Numbers *</label>
+                    <textarea id="to_number" name="to_number" class="form-control" placeholder="exampe 221781487487,2219878755,22158987487 " rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                       <label for="form_message">Message *</label>
+                    <textarea id="message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+            
+            <div class="col-md-12">
+                <input type="submit" class="btn btn-success btn-send" value="Send message">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p class="text-muted">
+                   
+            </div>
+        </div>
+    </div>
+
+</form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js" integrity="sha256-dHf/YjH1A4tewEsKUSmNnV05DDbfGN3g7NMq86xgGh8=" crossorigin="anonymous"></script>
+        <script src="contact.js"></script>
+    </body>
+</html>
